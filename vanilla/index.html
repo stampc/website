@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+
+    <script type="text/javascript" src="actions.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-container">
+            <div class="text-container">
+                <div id="profile-text" onclick="window.location.reload()">CS</div>
+            </div>
+            <div class="menu-container">
+                <div class="menu-item" onclick="changeContent(event, 'about-me'); setBackgroundColor(); timeSinceLastChampionship();">About Me</div>
+                <div class="menu-item" onclick="changeContent(event, 'projects'); setBackgroundColor()">Projects</div>
+                <div class="menu-item" onclick="changeContent(event, 'resume'); setBackgroundColor()">Resume</div>
+                <div class="menu-item" onclick="changeContent(event, 'contact'); setBackgroundColor()">Contact</div>
+
+            </div>
+        </div>
+
+        <!-- image -->
+        <div id="initial-image-container">
+            <div id="initial-text">
+                Connor Stamper
+            </div>
+        </div>
+
+
+        <div class="outer-content-container">
+            <div class="inner-content-container">
+                <!-- ABOUT ME -->
+                <div class="content" id="about-me">
+                    <h4>Hello,</h4>
+
+                    <p>I am a software engineer that works for PTC and lives in Boston. Outside of work I love watching
+                        sports and working on side projects.</p>
+
+                    <br>
+
+                    <p>I follow 6 teams</p>
+                    <ul>
+                        <li>Wisconsin Badgers Football</li>
+                        <li>Wisconsin Badgers Basketball</li>
+                        <li>Minnesota Vikings</li>
+                        <li>Minnesota Twins</li>
+                        <li>Minnesota Wild</li>
+                        <li>Minnesota Timberwolves</li>
+                    </ul>
+
+                    <p>and it's been <h3 class="championshipCount"></h3> since our last championship :(</p>
+
+                </div>
+
+                <!-- PROJECTS -->
+                <div class="content" id="projects">
+                    PROJECTS
+                </div>
+
+                <!-- RESUME -->
+                <div class="content" id="resume">
+                    RESUME
+                </div>
+
+                <!-- CONTACT -->
+                <div class="content" id="contact">
+                    <div class="contact-item">
+                        <div class="contact-icon-container">
+                            <i class="far fa-envelope"></i>
+                        </div>
+                        <h6><a href="mailto:connorpstamper@gmail.com">connorpstamper@gmail.com</a></h6>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-container">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h6><a href="https://linkedin.com/in/connorstamper">linkedin.com/in/connorstamper</a></h6>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-container">
+                            <i class="fab fa-github-square"></i>
+                        </div>
+                        <h6><a href="https://github.com/connorstamper">github.com/connorstamper</a></h6>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-container">
+                            <i class="fab fa-soundcloud"></i>
+                        </div>
+                        <h6><a href="https://soundcloud.com/stampthat">soundcloud.com/stampthat</a></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
